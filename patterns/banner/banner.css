@@ -1,3 +1,10 @@
 .banner {
-  width: 100%;
+  position: relative;
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 25%;
+  left: 1em;
+  color: #fff;
 }

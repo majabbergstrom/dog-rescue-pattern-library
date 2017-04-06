@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>form fields</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../common/modules.css" rel="stylesheet">
+  <link href="../../common/grid.css" rel="stylesheet">
+  <link href="../../common/type.css" rel="stylesheet">
+  <link href="../../common/theme.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+  <link href="form.css" rel="stylesheet">
+</head>
+<body>
+  <form class="max-length island" method="post" novalidate="">
+    <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+      <h3 class="push-0">
+        <i class="icon i-32"><svg><use xlink:href="../../images/icons.svg#error"/></svg></i>
+        <span class="icon-label">Some items require attention</span>
+      </h3>
+    </div>
+
+    <div class="push-2">
+      <label class="dog-name-label" for="dog-name">DOG NAME</label>
+      <input id="dog-name" required aria-describedby="dog-name-error">
+      <p class="error-message milli island-1-4 push-0" id="dog-name-error">
+        <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error"/></svg></i>
+        <span class="icon-label">Please provide a dog name</span>
+      </p>
+    </div>
+
+    <div class="push-2">
+      <input type="checkbox" id="check" name="check" required aria-describedby="check-error">
+      <label for="check">I have thoroughly read and understand the information</label>
+      <p class="error-message milli island-1-4 push-0" id="check-error">
+        <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error"/></svg></i>
+        <span class="icon-label">Please agree that you understand the application</span>
+      </p>
+    </div>
+
+    <div class="push-2">
+      <label class="text-field-label" for="text-field">Why do you want a rescue dog?</label>
+      <textarea id="text-field" name="text-field" required aria-describedby="text-field-error"></textarea>
+      <p class="error-message milli island-1-4 push-0" id="text-field-error">
+        <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error"/></svg></i>
+        <span class="icon-label">Please enter an explanation</span>
+      </p>
+    </div>
+
+    <div class="push-2">
+      <label class="name-label" for="name">Full Name</label>
+      <input id="name" name="name" required aria-describedby="name-error">
+      <p class="error-message milli island-1-4 push-0" id="name-error">
+        <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error"/></svg></i>
+        <span class="icon-label">Please enter your name</span>
+      </p>
+    </div>
+
+    <div class="push-2">
+      <label class="email-label" for="email">Email</label>
+      <input class="gutter-1-4" id="email" type="email" placeholder="email@example.com" name="email" required aria-describedby="email-error">
+      <p class="error-message milli island-1-4 push-0" id="email-error">
+        <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error"/></svg></i>
+        <span class="icon-label"> Please provide a properly formatted email address</span>
+      </p>
+    </div>
+
+    <div class="push-2">
+      <label class="house-type" for="house-type">House Type</label>
+      <select class="gutter-1-4" id="house-type" name="house-type" multiple aria-describedby="house-type-error">
+        <option>Apartment</option>
+        <option>Studio</option>
+        <option>House</option>
+      </select>
+      <p class="error-message milli island-1-4 push-0" id="house-type-error">
+        <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error"/></svg></i>
+        <span class="icon-label"> Please make a selection</span>
+      </p>
+    </div>
+
+    <div class="push-2">
+      <p>Have you ever owned a pet before?</p>
+      <ul>
+        <li class="push list-group-inline">
+          <input type="radio" id="p-pet-yes" name="p-pet" required aria-describedby="radio-error">
+          <label for="p-pet-yes">Yes</label>
+        </li>
+        <li class="push list-group-inline">
+          <input type="radio" id="p-pet-no" name="p-pet" required aria-describedby="radio-error">
+          <label for="p-pet-no">No</label>
+          <p class="error-message milli island-1-4 push-0" id="radio-error">
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#error"/></svg></i>
+            <span class="icon-label"> Check either yes or no</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="pad-t-1-2">
+      <button class="btn" type="submit">Send</button>
+    </div>
+  </form>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+</body>
+</html>

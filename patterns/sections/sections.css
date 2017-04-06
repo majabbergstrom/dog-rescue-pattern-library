@@ -1,0 +1,18 @@
+#dog-filters-breed,
+#dog-filters-age,
+#dog-filters-gender {
+  border-radius: 20px;
+}
+
+.dog-filters {
+  font-family: raleway, sans-serif;
+  border-radius: 20px;
+}
+
+.card {
+  width: 25%;
+}
+
+.card-content {
+  background-color: rgba(0, 0, 0, .1);
+}

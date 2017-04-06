@@ -42,8 +42,8 @@
 
 .btn-banner {
   background-color: transparent;
-  border-color: var(--color-accent);
-  color: var(--color-accent);
+  border-color: #fff;
+  color: #fff;
 }
 
 .btn-collapse {

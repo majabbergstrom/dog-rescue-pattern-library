@@ -1,0 +1,43 @@
+#dog-name,
+#name,
+#email,
+#house-type {
+  border-radius: 20px;
+}
+
+.dog-name-label,
+.name-label,
+.email-label,
+.house-type {
+  font-family: raleway, sans-serif;
+}
+
+#text-field {
+  border-radius: 10px;
+}
+
+.text-field-label {
+  font-family: raleway, sans-serif;
+}
+
+.is-validated input:invalid,
+.is-validated input[type="checkbox"]:invalid + label::before {
+  border-color: #f33;
+}
+
+.error-message {
+  display: none;
+  background-color: #fee;
+  color: #c33;
+}
+
+.error-message-highlighted {
+  background-color: #c33;
+  color: #fff;
+}
+
+.is-validated > .error-message:first-child,
+.is-validated input:invalid + .error-message,
+.is-validated input:invalid + label + .error-message {
+  display: block;
+}
