@@ -3,7 +3,36 @@
 #email,
 #dog-breed,
 #dog-age,
-#dog-gender {
+#dog-gender,
+#age,
+#partner-name,
+#partner-age,
+#address,
+#city,
+#province,
+#postal,
+#phone-number,
+#kid,
+#kid-age,
+#residents,
+#allergies,
+#ownership-type,
+#house-type,
+#landlord-name,
+#landlord-phone,
+#environment-type,
+#property,
+#not-home,
+#work-hrs,
+#pet-place,
+#holiday,
+#dog-size,
+#gender,
+#coat,
+#activity,
+#personality,
+#dog-med,
+#die {
   border-radius: 20px;
 }
 
@@ -14,7 +43,8 @@
   font-family: raleway, sans-serif;
 }
 
-#text-field {
+#text-field,
+#text {
   border-radius: 10px;
 }
 

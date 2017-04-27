@@ -34,7 +34,13 @@
     </nav>
   </header>
   <main>
-    <form class="gutter-2 pad-t">
+    <form class="gutter-2 pad-t" method="post" novalidate="">
+      <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+        <h3 class="push-0">
+          <i class="icon i-32"><svg><use xlink:href="../../images/icons.svg#error"/></svg></i>
+          <span class="icon-label">Some items require attention</span>
+        </h3>
+      </div>
 
       <div class="grid">
         <div class="unit xs-2-4 s-2-4 m-2-4 l-2-4">
@@ -114,11 +120,18 @@
     </form>
 
     <div class="gutter">
-      <a class="tera" href="#">OWNER INFORMATION</a>
+      <a class="tera push-1-2" href="#">OWNER INFORMATION</a>
       <a class="btn btn-collapse icon i-32" href="#">
         <svg><use xlink:href="../images/icons.svg#minus" /></svg>
       </a>
-      <form class="grid">
+      <form class="grid" method="post" novalidate="">
+        <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+          <h3 class="push-0">
+            <i class="icon i-32"><svg><use xlink:href="../../images/icons.svg#error"/></svg></i>
+            <span class="icon-label">Some items require attention</span>
+          </h3>
+        </div>
+
         <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
           <label class="name-label" for="name">Full Name</label>
           <input id="name" name="name" required aria-describedby="name-error">
@@ -235,11 +248,18 @@
     </div>
 
     <div class="gutter">
-      <a class="tera" href="#">LIVING CONDITIONS</a>
+      <a class="tera push-1-2" href="#">LIVING CONDITIONS</a>
       <a class="btn btn-collapse icon i-32" href="#">
         <svg><use xlink:href="../images/icons.svg#minus" /></svg>
       </a>
-      <form class="grid">
+      <form class="grid" method="post" novalidate="">
+        <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+          <h3 class="push-0">
+            <i class="icon i-32"><svg><use xlink:href="../../images/icons.svg#error"/></svg></i>
+            <span class="icon-label">Some items require attention</span>
+          </h3>
+        </div>
+
         <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
           <label class="house-type" for="house-type">House Type</label>
           <select class="gutter-1-4" id="house-type" name="house-type" aria-describedby="house-type-error">
@@ -328,156 +348,167 @@
     </div>
 
     <div class="gutter">
-      <a href="#">PET INFORMATION</a>
-      <a class="btn btn-collapse icon i-32" href="#">
-        <svg><use xlink:href="../images/icons.svg#minus" /></svg>
-      </a>
-      <form class="grid">
-        <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
-          <label class="name-label" for="dog-age">Age</label>
-          <input id="dog-age" name="dog-age" required aria-describedby="dog-age-error">
-          <p class="error-message milli island-1-4 push-0" id="dog-age-error">
-            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
-            <span class="icon-label">Please provide an answer</span>
-          </p>
-        </div>
-        <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
-          <label class="name-label" for="dog-size">Size</label>
-          <input id="dog-size" name="dog-size" required aria-describedby="dog-size-error">
-          <p class="error-message milli island-1-4 push-0" id="dog-size-error">
-            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
-            <span class="icon-label">Please provide an answer</span>
-          </p>
-        </div>
-        <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
-          <label class="house-type" for="gender">Gender</label>
-          <select class="gutter-1-4" id="gender" name="gender" aria-describedby="gender-error">
-            <option>Female</option>
-            <option>Male</option>
-          </select>
-          <p class="error-message milli island-1-4 push-0" id="gender-error">
-            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
-            <span class="icon-label"> Please make a selection</span>
-          </p>
-        </div>
-        <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
-          <label class="house-type" for="coat">Coat Type</label>
-          <select class="gutter-1-4" id="coat" name="coat" aria-describedby="coat-error">
-            <option>Short Hair</option>
-            <option>Long Hair</option>
-            <option>Hypo-allergetic</option>
-            <option>Curly</option>
-            <option>Wirey</option>
-          </select>
-          <p class="error-message milli island-1-4 push-0" id="coat-error">
-            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
-            <span class="icon-label"> Please make a selection</span>
-          </p>
-        </div>
-        <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
-          <label class="house-type" for="activity">Activity Level</label>
-          <select class="gutter-1-4" id="activity" name="activity" aria-describedby="activity-error">
-            <option>Low</option>
-            <option>Normal</option>
-            <option>High</option>
-          </select>
-          <p class="error-message milli island-1-4 push-0" id="activity-error">
-            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
-            <span class="icon-label"> Please make a selection</span>
-          </p>
-        </div>
-        <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
-          <label class="house-type" for="personality">Personality</label>
-          <select class="gutter-1-4" id="personality" name="personality" aria-describedby="personality-error">
-            <option>Friendly</option>
-            <option>Hyper</option>
-            <option>Quiet</option>
-            <option>Obedient</option>
-          </select>
-          <p class="error-message milli island-1-4 push-0" id="personality-error">
-            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
-            <span class="icon-label"> Please make a selection</span>
-          </p>
-        </div>
-        <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
-          <p>Have you ever owned a pet before?</p>
-          <ul>
-            <li class="push list-group-inline">
-              <input type="radio" id="p-pet-yes" name="p-pet" required aria-describedby="radio-error">
-              <label for="p-pet-yes">Yes</label>
-            </li>
-            <li class="push list-group-inline">
-              <input type="radio" id="p-pet-no" name="p-pet" required aria-describedby="radio-error">
-              <label for="p-pet-no">No</label>
-              <p class="error-message milli island-1-4 push-0" id="radio-error">
-                <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
-                <span class="icon-label"> Check either yes or no</span>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
-          <p>Do you currently have any pets?</p>
-          <ul>
-            <li class="push list-group-inline">
-              <input type="radio" id="c-pet-yes" name="c-pet" required aria-describedby="radio-error">
-              <label for="c-pet-yes">Yes</label>
-            </li>
-            <li class="push list-group-inline">
-              <input type="radio" id="c-pet-no" name="c-pet" required aria-describedby="radio-error">
-              <label for="c-pet-no">No</label>
-              <p class="error-message milli island-1-4 push-0" id="c-radio-error">
-                <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
-                <span class="icon-label"> Check either yes or no</span>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div class="push-2 unit xs-1 s-1 m-1 l-1 gutter">
-          <label class="text-field-label" for="text-field">If yes, please specify type, breed, age, sex</label>
-          <textarea id="text-field" name="text-field"></textarea>
-        </div>
-        <div class="push-2 unit xs-1 s-1 m-1 l-1 gutter">
-          <p>Are other pets spayed/neutered?</p>
-          <ul>
-            <li class="push list-group-inline">
-              <input type="radio" id="n-pet-yes" name="n-pet">
-              <label for="n-pet-yes">Yes</label>
-            </li>
-            <li class="push list-group-inline">
-              <input type="radio" id="n-pet-no" name="n-pet">
-              <label for="n-pet-no">No</label>
-            </li>
-          </ul>
-        </div>
-        <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
-          <label class="name-label" for="dog-med">Maximum amount you would spend on medical treatment</label>
-          <input id="dog-med" name="dog-med" required aria-describedby="dog-med-error">
-          <p class="error-message milli island-1-4 push-0" id="dog-med-error">
-            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
-            <span class="icon-label">Please provide an answer</span>
-          </p>
-        </div>
-        <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
-          <label class="name-label" for="die">Who would care for your adopted dog should you become ill or die suddenly</label>
-          <input id="die" name="die" required aria-describedby="die-error">
-          <p class="error-message milli island-1-4 push-0" id="die-error">
-            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
-            <span class="icon-label">Please provide an answer</span>
-          </p>
-        </div>
-        <div class="push-2 unit xs-1 s-1 m-1 l-1 gutter">
-          <label class="text-label" for="text">Why do you want a rescue dog?</label>
-          <textarea id="text" name="text" required aria-describedby="text-error"></textarea>
-          <p class="error-message milli island-1-4 push-0" id="text-error">
-            <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
-            <span class="icon-label">Please enter an explanation</span>
-          </p>
-        </div>
-        <div class="pad-t-1-2 push unit xs-1 s-1 m-1 l-1">
-          <button class="btn" type="submit">Send</button>
-        </div>
-      </form>
+      <div>
+        <a class="tera push-1-2" href="#">PET INFORMATION</a>
+        <a class="btn btn-collapse icon i-32" href="#">
+          <svg><use xlink:href="../images/icons.svg#minus" /></svg>
+        </a>
+      </div>
+      <div class="grid">
+        <form method="post" novalidate="">
+          <div class="error-message error-message-highlighted push island-1-2 unit xs-1 s-1 m-1 l-1" role="alert" aria-live="assertive">
+            <h3 class="push-0">
+              <i class="icon i-32"><svg><use xlink:href="../../images/icons.svg#error"/></svg></i>
+              <span class="icon-label">Some items require attention</span>
+            </h3>
+          </div>
+
+          <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
+            <label class="name-label" for="dog-age">Age</label>
+            <input id="dog-age" name="dog-age" required aria-describedby="dog-age-error">
+            <p class="error-message milli island-1-4 push-0" id="dog-age-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
+              <span class="icon-label">Please provide an answer</span>
+            </p>
+          </div>
+          <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
+            <label class="name-label" for="dog-size">Size</label>
+            <input id="dog-size" name="dog-size" required aria-describedby="dog-size-error">
+            <p class="error-message milli island-1-4 push-0" id="dog-size-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
+              <span class="icon-label">Please provide an answer</span>
+            </p>
+          </div>
+          <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
+            <label class="house-type" for="gender">Gender</label>
+            <select class="gutter-1-4" id="gender" name="gender" aria-describedby="gender-error">
+              <option>Female</option>
+              <option>Male</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="gender-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
+              <span class="icon-label"> Please make a selection</span>
+            </p>
+          </div>
+          <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
+            <label class="house-type" for="coat">Coat Type</label>
+            <select class="gutter-1-4" id="coat" name="coat" aria-describedby="coat-error">
+              <option>Short Hair</option>
+              <option>Long Hair</option>
+              <option>Hypo-allergetic</option>
+              <option>Curly</option>
+              <option>Wirey</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="coat-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
+              <span class="icon-label"> Please make a selection</span>
+            </p>
+          </div>
+          <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
+            <label class="house-type" for="activity">Activity Level</label>
+            <select class="gutter-1-4" id="activity" name="activity" aria-describedby="activity-error">
+              <option>Low</option>
+              <option>Normal</option>
+              <option>High</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="activity-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
+              <span class="icon-label"> Please make a selection</span>
+            </p>
+          </div>
+          <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
+            <label class="house-type" for="personality">Personality</label>
+            <select class="gutter-1-4" id="personality" name="personality" aria-describedby="personality-error">
+              <option>Friendly</option>
+              <option>Hyper</option>
+              <option>Quiet</option>
+              <option>Obedient</option>
+            </select>
+            <p class="error-message milli island-1-4 push-0" id="personality-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
+              <span class="icon-label"> Please make a selection</span>
+            </p>
+          </div>
+          <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
+            <p>Have you ever owned a pet before?</p>
+            <ul>
+              <li class="push list-group-inline">
+                <input type="radio" id="p-pet-yes" name="p-pet" required aria-describedby="radio-error">
+                <label for="p-pet-yes">Yes</label>
+              </li>
+              <li class="push list-group-inline">
+                <input type="radio" id="p-pet-no" name="p-pet" required aria-describedby="radio-error">
+                <label for="p-pet-no">No</label>
+                <p class="error-message milli island-1-4 push-0" id="radio-error">
+                  <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
+                  <span class="icon-label"> Check either yes or no</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
+            <p>Do you currently have any pets?</p>
+            <ul>
+              <li class="push list-group-inline">
+                <input type="radio" id="c-pet-yes" name="c-pet" required aria-describedby="radio-error">
+                <label for="c-pet-yes">Yes</label>
+              </li>
+              <li class="push list-group-inline">
+                <input type="radio" id="c-pet-no" name="c-pet" required aria-describedby="radio-error">
+                <label for="c-pet-no">No</label>
+                <p class="error-message milli island-1-4 push-0" id="c-radio-error">
+                  <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
+                  <span class="icon-label"> Check either yes or no</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="push-2 unit xs-1 s-1 m-1 l-1 gutter">
+            <label class="text-field-label" for="text-field">If yes, please specify type, breed, age, sex</label>
+            <textarea id="text-field" name="text-field"></textarea>
+          </div>
+          <div class="push-2 unit xs-1 s-1 m-1 l-1 gutter">
+            <p>Are other pets spayed/neutered?</p>
+            <ul>
+              <li class="push list-group-inline">
+                <input type="radio" id="n-pet-yes" name="n-pet">
+                <label for="n-pet-yes">Yes</label>
+              </li>
+              <li class="push list-group-inline">
+                <input type="radio" id="n-pet-no" name="n-pet">
+                <label for="n-pet-no">No</label>
+              </li>
+            </ul>
+          </div>
+          <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
+            <label class="name-label" for="dog-med">Maximum amount you would spend on medical treatment</label>
+            <input id="dog-med" name="dog-med" required aria-describedby="dog-med-error">
+            <p class="error-message milli island-1-4 push-0" id="dog-med-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
+              <span class="icon-label">Please provide an answer</span>
+            </p>
+          </div>
+          <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
+            <label class="name-label" for="die">Who would care for your adopted dog should you become ill or die suddenly</label>
+            <input id="die" name="die" required aria-describedby="die-error">
+            <p class="error-message milli island-1-4 push-0" id="die-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
+              <span class="icon-label">Please provide an answer</span>
+            </p>
+          </div>
+          <div class="push-2 unit xs-1 s-1 m-1 l-1 gutter">
+            <label class="text-label" for="text">Why do you want a rescue dog?</label>
+            <textarea id="text" name="text" required aria-describedby="text-error"></textarea>
+            <p class="error-message milli island-1-4 push-0" id="text-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
+              <span class="icon-label">Please enter an explanation</span>
+            </p>
+          </div>
+          <div class="pad-t-1-2 push unit xs-1 s-1 m-1 l-1">
+            <button class="btn" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
     </div>
 
   </main>
@@ -506,6 +537,6 @@
       <h6 class="micro not-bold push-0 pad-t-2">LOYAL Rescue Inc. © 2005-2014</h6>
     </div>
   </footer>
-
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>
