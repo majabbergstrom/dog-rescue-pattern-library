@@ -44,12 +44,12 @@
 
       <div class="grid">
         <div class="unit xs-2-4 s-2-4 m-2-4 l-2-4">
-          <div class="push-2 grid">
+          <div class="push-2">
             <label class="dog-name-label unit xs-1-3 s-1-3 m-1-3 l-1-3" for="dog-name">DOG NAME</label>
             <input class="unit xs-2-3 s-2-3 m-2-3 l-2-3" id="dog-name" required aria-describedby="dog-name-error">
             <p class="error-message milli island-1-4 push-0" id="dog-name-error">
               <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
-              <span class="icon-label">Please provide a dog name</span>
+              <span class="icon-label">Provide Name</span>
             </p>
           </div>
         </div>
@@ -117,14 +117,15 @@
           <span class="icon-label">Please check that you have read and understood the text.</span>
         </p>
       </div>
-    </form>
 
-    <div class="gutter">
-      <a class="tera push-1-2" href="#">OWNER INFORMATION</a>
-      <a class="btn btn-collapse icon i-32" href="#">
-        <svg><use xlink:href="../images/icons.svg#minus" /></svg>
-      </a>
-      <form class="grid" method="post" novalidate="">
+    <div class="gutter grid">
+      <div class="unit xs-1 s-1 m-1 l-1">
+        <a class="tera push-1-2" href="#">OWNER INFORMATION</a>
+        <a class="btn btn-collapse icon i-32" href="#">
+          <svg><use xlink:href="../images/icons.svg#minus" /></svg>
+        </a>
+      </div>
+
         <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
           <h3 class="push-0">
             <i class="icon i-32"><svg><use xlink:href="../../images/icons.svg#error"/></svg></i>
@@ -244,21 +245,15 @@
             <span class="icon-label">Please provide an answer</span>
           </p>
         </div>
-      </form>
     </div>
 
-    <div class="gutter">
-      <a class="tera push-1-2" href="#">LIVING CONDITIONS</a>
-      <a class="btn btn-collapse icon i-32" href="#">
-        <svg><use xlink:href="../images/icons.svg#minus" /></svg>
-      </a>
-      <form class="grid" method="post" novalidate="">
-        <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
-          <h3 class="push-0">
-            <i class="icon i-32"><svg><use xlink:href="../../images/icons.svg#error"/></svg></i>
-            <span class="icon-label">Some items require attention</span>
-          </h3>
-        </div>
+    <div class="grid">
+      <div class="unit xs-1 s-1 m-1 l-1">
+        <a class="tera push-1-2" href="#">LIVING CONDITIONS</a>
+        <a class="btn btn-collapse icon i-32" href="#">
+          <svg><use xlink:href="../images/icons.svg#minus" /></svg>
+        </a>
+      </div>
 
         <div class="push-2 unit xs-1 s-1 m-1-2 l-1-2 gutter">
           <label class="house-type" for="house-type">House Type</label>
@@ -344,7 +339,7 @@
             <span class="icon-label">Please provide an answer</span>
           </p>
         </div>
-      </form>
+
     </div>
 
     <div class="gutter">
@@ -354,8 +349,8 @@
           <svg><use xlink:href="../images/icons.svg#minus" /></svg>
         </a>
       </div>
+
       <div class="grid">
-        <form method="post" novalidate="">
           <div class="error-message error-message-highlighted push island-1-2 unit xs-1 s-1 m-1 l-1" role="alert" aria-live="assertive">
             <h3 class="push-0">
               <i class="icon i-32"><svg><use xlink:href="../../images/icons.svg#error"/></svg></i>
@@ -504,9 +499,36 @@
               <span class="icon-label">Please enter an explanation</span>
             </p>
           </div>
-          <div class="pad-t-1-2 push unit xs-1 s-1 m-1 l-1">
-            <button class="btn" type="submit">Send</button>
+
+          <div class="unit xs-1 s-1 m-1 l-1 push">
+            <a class="tera push-1-2" href="#">OTHER INFORMATION</a>
+            <a class="btn btn-collapse icon i-32" href="#">
+              <svg><use xlink:href="../images/icons.svg#plus" /></svg>
+            </a>
           </div>
+
+          <div class="unit xs-1 s-1 m-1 l-1">
+            <p>I certify that the information provided on this form is true & correct and that nothing of relevance has been omitted. I realize that if any of the information I have provided is inaccurate, misleading, or significant omissions have been made, this may result in my application being denied.</p>
+            <p>I grant my permission for a LOYAL Rescue Inc. volunteer to contact all stated personal references and veterinarian(s).</p>
+            <p>I am financially and physically able to care for this animal. I understand that proper food, water, shelter, and veterinary care is necessary and may be costly, and I am able to meet these requirements.</p>
+            <p>I am aware that Home Visits are mandatory prior to approval for ALL applicants and are also made on a random basis following adoption.</p>
+            <p>If, even after an adoption has taken place, it is discovered that information contained in this application to be false or misleading, LOYAL Rescue Inc. retains the right to deny your application or remove the animal from your premises without a refund of monies paid. </p>
+            <p>LOYAL Rescue Inc. reserves the right to deny any application due to the primary interest being the best interest of the animal.</p>
+          </div>
+
+          <div class="push unit xs-1 s-1 m-1 l-1 text-center">
+            <input class="push-r" type="checkbox" id="final-check" name="final-check" required aria-describedby="final-check-error">
+            <label class="bold mega" for="final-check">I Agree to the above statements and I certify that I am 18 years or older</label>
+            <p class="error-message milli island-1-4 push-0" id="final-check-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#error"/></svg></i>
+              <span class="icon-label">Please check that you have read and understood the text.</span>
+            </p>
+          </div>
+
+          <div class="pad-t-1-2 push unit xs-1 s-1 m-1 l-1 text-center">
+            <button class="btn" type="submit">Submit</button>
+          </div>
+
         </form>
       </div>
     </div>

@@ -57,6 +57,13 @@
   border-color: #f33;
 }
 
+input,
+input[type="checkbox"] + label::before,
+[type="radio"] + label::before,
+select {
+  border-radius: 10px;
+}
+
 .error-message {
   display: none;
   background-color: #fee;
