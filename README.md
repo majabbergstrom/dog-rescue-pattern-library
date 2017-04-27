@@ -1,4 +1,6 @@
 ---
+outputFile: "index.html"
+
 name: "LOYAL Rescue"
 fontUrl: "https://fonts.googleapis.com/css?family=Merriweather:400,700|Raleway:400,700"
 fonts:

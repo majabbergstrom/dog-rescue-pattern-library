@@ -1,14 +1,16 @@
 #dog-name,
 #name,
 #email,
-#house-type {
+#dog-breed,
+#dog-age,
+#dog-gender {
   border-radius: 20px;
 }
 
 .dog-name-label,
 .name-label,
 .email-label,
-.house-type {
+.filter {
   font-family: raleway, sans-serif;
 }
 
